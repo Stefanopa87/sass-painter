@@ -53,12 +53,14 @@ main {
   width: 100%;
 }
 main .jumbotron {
+  background-image: url("img/bg-painter-home.jpg");
   background-size: cover;
   height: 400px;
+  display: flex;
+  align-items: center;
 }
 main .jumbotron img {
   height: 55px;
-  margin-top: 40px;
 }
 main .jumbotron h4 {
   margin-top: 30px;
@@ -81,6 +83,20 @@ main .jumbotron .jumbo-button .first-btn {
 }
 main .jumbotron .jumbo-button .second-btn {
   background: inherit;
+}
+main h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+main .box {
+  display: flex;
+  justify-content: space-between;
+}
+main .mini-box {
+  margin-top: 30px;
+  width: 28%;
+  height: 250px;
+  border: solid 1px blue;
 }
 
 * {

@@ -6,6 +6,7 @@ $text-fucsia: #D45CAB;
 
 $jumbo-margin-top: 30px;
 
+
 @mixin rules-nav {
     list-style: none;
     text-decoration: none;
@@ -69,12 +70,14 @@ main{
     width: 100%;
 
     .jumbotron{ 
+        background-image: url('img/bg-painter-home.jpg');
         background-size: cover;
         height: 400px;
+        display: flex;
+        align-items: center;
 
         img{
             height: 55px;
-            margin-top: 40px;
         }
 
         h4{
@@ -104,6 +107,23 @@ main{
         }
     }
 
+    h3{
+        text-align: center;
+        margin-top: 50px;
+    }
 
-    
+    .box{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mini-box{
+        margin-top: 30px;
+        width: 28%;
+        height: 250px;
+        border: solid 1px blue;
+    }
+
+
+
 }
