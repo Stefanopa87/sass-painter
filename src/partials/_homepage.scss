@@ -1,23 +1,30 @@
 
 $color-nav: black;
-$color-icons: #009CFF;
+$color-soft-blue: #009CFF;
 $text-white: white;
 $text-fucsia: #D45CAB;
 
 $jumbo-margin-top: 30px;
 
 
-@mixin rules-nav {
+@mixin rules-nav{
     list-style: none;
     text-decoration: none;
     display: flex;
     margin-right: 15px;
+    margin-top: 10px;
+}
+
+@mixin img-size{
+    background-size: cover;
+    height: 150px;
+    margin-bottom: 30px;
 }
 
 .container {
     width: 80%;
     margin: auto;
-    border: solid 1px red;
+    // border: solid 1px red;
 }
 
 header{
@@ -38,7 +45,7 @@ header{
         }
         
         li i{
-            color: $color-icons;
+            color: $color-soft-blue;
             display: inline;
             margin-left: 40px;            
         }
@@ -119,10 +126,39 @@ main{
 
     .mini-box{
         margin-top: 30px;
-        width: 28%;
-        height: 250px;
-        border: solid 1px blue;
+        width: 30%;
+        height: 320px;
+        background-color: white;
+
+        .img1{
+            background-image: url('img/ptr-module.jpg');
+             @include img-size;
+        }
+        .img2{
+            background-image: url('img/particleshop-module.jpg');
+             @include img-size;
+        }
+        .img3{
+            background-image: url('img/brush-pack-module.jpg');
+             @include img-size;
+        }
     }
+
+
+    .box-text{
+        padding: 2%;
+
+        .new{
+            font-size: large;
+            font-style: italic;
+            color: $color-soft-blue;        
+        }
+        strong{
+            color: $color-soft-blue
+        }
+    }
+
+    
 
 
 

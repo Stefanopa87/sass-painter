@@ -1,7 +1,6 @@
 .container {
   width: 80%;
   margin: auto;
-  border: solid 1px red;
 }
 
 header {
@@ -19,6 +18,7 @@ header nav.top ul {
   text-decoration: none;
   display: flex;
   margin-right: 15px;
+  margin-top: 10px;
 }
 header nav.top li {
   cursor: pointer;
@@ -38,6 +38,7 @@ header nav.bottom ul {
   text-decoration: none;
   display: flex;
   margin-right: 15px;
+  margin-top: 10px;
 }
 header nav.bottom li {
   cursor: pointer;
@@ -94,9 +95,38 @@ main .box {
 }
 main .mini-box {
   margin-top: 30px;
-  width: 28%;
-  height: 250px;
-  border: solid 1px blue;
+  width: 30%;
+  height: 320px;
+  background-color: white;
+}
+main .mini-box .img1 {
+  background-image: url("img/ptr-module.jpg");
+  background-size: cover;
+  height: 150px;
+  margin-bottom: 30px;
+}
+main .mini-box .img2 {
+  background-image: url("img/particleshop-module.jpg");
+  background-size: cover;
+  height: 150px;
+  margin-bottom: 30px;
+}
+main .mini-box .img3 {
+  background-image: url("img/brush-pack-module.jpg");
+  background-size: cover;
+  height: 150px;
+  margin-bottom: 30px;
+}
+main .box-text {
+  padding: 2%;
+}
+main .box-text .new {
+  font-size: large;
+  font-style: italic;
+  color: #009CFF;
+}
+main .box-text strong {
+  color: #009CFF;
 }
 
 * {
