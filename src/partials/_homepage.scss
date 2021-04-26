@@ -2,9 +2,11 @@
 $color-nav: black;
 $color-icons: #009CFF;
 $text-white: white;
+$text-fucsia: #D45CAB;
+
+$jumbo-margin-top: 30px;
 
 @mixin rules-nav {
-
     list-style: none;
     text-decoration: none;
     display: flex;
@@ -14,13 +16,13 @@ $text-white: white;
 .container {
     width: 80%;
     margin: auto;
+    border: solid 1px red;
 }
 
 header{
-
     background-color: $color-nav;
     height: 100px;
-    width: 100vw;
+    width: 100%;
     
     nav.top{        
         display: flex;
@@ -64,9 +66,44 @@ header{
 }
 
 main{
+    width: 100%;
 
-    .jumbotrone{ 
+    .jumbotron{ 
         background-size: cover;
         height: 400px;
+
+        img{
+            height: 55px;
+            margin-top: 40px;
+        }
+
+        h4{
+            margin-top: $jumbo-margin-top;
+        }
+        p{
+            color: $text-fucsia;
+            font-style: italic;
+            margin-top: $jumbo-margin-top;
+        }
+
+        .jumbo-button{
+            margin-top: $jumbo-margin-top;
+
+            button{
+                padding: 1% 2%;
+                margin-right: 10px;
+            }
+
+            .first-btn{
+                background-color: black;
+                color: $text-white;
+            }
+            .second-btn{
+                background: inherit;
+            }
+        }
     }
+
+
+    
 }

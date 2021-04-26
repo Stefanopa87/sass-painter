@@ -1,12 +1,13 @@
 .container {
   width: 80%;
   margin: auto;
+  border: solid 1px red;
 }
 
 header {
   background-color: black;
   height: 100px;
-  width: 100vw;
+  width: 100%;
 }
 header nav.top {
   display: flex;
@@ -48,9 +49,38 @@ header nav.bottom li i {
   margin-left: 10px;
 }
 
-main .jumbotrone {
+main {
+  width: 100%;
+}
+main .jumbotron {
   background-size: cover;
   height: 400px;
+}
+main .jumbotron img {
+  height: 55px;
+  margin-top: 40px;
+}
+main .jumbotron h4 {
+  margin-top: 30px;
+}
+main .jumbotron p {
+  color: #D45CAB;
+  font-style: italic;
+  margin-top: 30px;
+}
+main .jumbotron .jumbo-button {
+  margin-top: 30px;
+}
+main .jumbotron .jumbo-button button {
+  padding: 1% 2%;
+  margin-right: 10px;
+}
+main .jumbotron .jumbo-button .first-btn {
+  background-color: black;
+  color: white;
+}
+main .jumbotron .jumbo-button .second-btn {
+  background: inherit;
 }
 
 * {
