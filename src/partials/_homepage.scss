@@ -1,0 +1,72 @@
+
+$color-nav: black;
+$color-icons: #009CFF;
+$text-white: white;
+
+@mixin rules-nav {
+
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    margin-right: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header{
+
+    background-color: $color-nav;
+    height: 100px;
+    width: 100vw;
+    
+    nav.top{        
+        display: flex;
+        justify-content: flex-end;
+        color: $text-white;
+
+        ul{
+            @include rules-nav;
+        }
+        li{
+            cursor: pointer;
+        }
+        
+        li i{
+            color: $color-icons;
+            display: inline;
+            margin-left: 40px;            
+        }
+    }
+
+    nav.bottom{
+        display: flex;
+        justify-content: flex-start;
+        color: $text-white;
+
+         ul {
+             @include rules-nav;
+         }
+
+         li {
+             cursor: pointer;
+              margin-right: 20px;
+         }
+
+         li i {
+             color: $text-white;
+             display: inline;
+             margin-left: 10px;
+         }
+    }
+}
+
+main{
+
+    .jumbotrone{ 
+        background-size: cover;
+        height: 400px;
+    }
+}

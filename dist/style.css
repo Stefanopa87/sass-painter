@@ -1,0 +1,64 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background-color: black;
+  height: 100px;
+  width: 100vw;
+}
+header nav.top {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+header nav.top ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  margin-right: 15px;
+}
+header nav.top li {
+  cursor: pointer;
+}
+header nav.top li i {
+  color: #009CFF;
+  display: inline;
+  margin-left: 40px;
+}
+header nav.bottom {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+}
+header nav.bottom ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  margin-right: 15px;
+}
+header nav.bottom li {
+  cursor: pointer;
+  margin-right: 20px;
+}
+header nav.bottom li i {
+  color: white;
+  display: inline;
+  margin-left: 10px;
+}
+
+main .jumbotrone {
+  background-size: cover;
+  height: 400px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E8E8E8;
+}
